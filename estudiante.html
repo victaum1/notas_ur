@@ -1,31 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudiante</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.bundle.min.js"></script>
-</head>
-<body>
-    <h1>
-        Perfil estudiante
-    </h1>
-    <div class="row">
-        <div class="col">
-            <h2>
-                Nombre del estudiante
-            </h2>
-            <p>
-            Tipo De Documento (C.C. , TI) y No Documento <br>
-            Tipo De Sangre estudiante <br>
-            Dirección <br>
-            Número Celular
-            </p>
-        </div>
-        <img class="col" src="images/img_usuario.png" alt="Fotografía Estudiante" 
-        height="200px" width="5px">
-    </div>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Perfil Estudiante<title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="images/Favicon_Urosario.svg" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+          <!-- Masthead Logo Image-->
+          <img class="masthead-avatar mb-5" src="images/Logo_Rosario.svg" alt="..." />
+                <a class="navbar-brand" href="#page-top"></a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Inicio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Misión</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Visión</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Soporte</a></li>
+                    </ul>
+                </div>
+         
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                                         
+                   <!-- Columnas -->
+                               
+                <div class="row">
+            
+                    <div class="col">
+                        <form action="" method="get" name="formRegistro" onsubmit="event.preventDefault()">
+                            <fieldset>
+                            <h1>INFORMACIÓN DEL ESTUDIANTE</h1> 
+                            <br>  
+                            <label for=""><h3>Nombre</h3></label>
+                            <input type="text" name="" id="">
+                            <br>
+                            <label for=""><h3>Usuario</h3></label>
+                            <input type="text" name="" id="txtUsuario">
+                            <br>
+                            <label for=""><h3>Tipo de Documento</h3></label>
+                            <input type="radio" name="Tipo de Documento" id="">C.C.
+                            <input type="radio" name="Tipo de Documento" id="">T.I.
+                            
+                            <br>
+                            <label for=""><h3>No Identificación</h3></label>
+                            <input type="text" name="" id="txtIdentificacion">
+                            <br>
+                            <label for=""><h3>Email</h3></label>
+                            <input type="text" name="" id="txtEmail">
+                            <br>
+                            <label for=""><h3>Tipo de Sangre</h3></label>
+                            <input type="text" name="" id="txtSangre">
+                            <br>
+                            <label for=""><h3>Dirección</h3></label>
+                            <input type="text" name="" id="txtDirección">
+                            <br>
+                            <label for=""><h3>Contrasena</h3></label>
+                            <input type="password" name="" id="txtPassword">
+                            <br>
+<br>
+                            <button id="idButton" type="submit" value="Actualizardatos" 
+
+                            onclick="validarFormulario()"> <h3>Actualizar Datos</h3></button>
+                            </fieldset>
+                    
+                        </form>
+                    
+                                </div>
+                <img class="col-6" height="100px" src="images/avataaars.svg" alt="..." />
+                </div>
+
+                    </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h3 class="page-section-heading text-center text-uppercase text-secondary mb-0">Materias Matrículadas</h3>
+               <br>
+                <!-- Materias Matriculadas -->
+                
+                <table class="table table-borderless">
+                    <thead>
+                        
+                    <tr>
+                        <th><h3>Materia 1</h3></th>
+                        <th><h3>Materia 2</h3></th>
+                        <th><h3>Materia 3</h3></th>
+                        <th><h3>Materia 4</h3></th>
+                    </tr>
+                                   
+                </thead>
+               
+                </table>
+
+
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Notas</h2>
+                
+<!-- Tabla Notas -->
+
+
+<table class="table">
+    <thead>
+        
+    <tr>
+        <th><h3>Item</h3></th>
+        <th><h3>Materia 1</h3></th>
+        <th><h3>Nota</h3></th>
+        <th><h3>Observaciones</h3></th>
+    </tr>
+                   
+</thead>
+<tbody>
+
+    <tr>
+        <td><h3>1</h3></td>
+        <td><h3>Actividad 1</h3></td>
+        <td><h3>5</h3></td>
+        <td><h3>Felicitaciones por tu buen desempeño</h3></td>
+    </tr>
+    <tr>
+        <td><h3>2</h3></td>
+        <td><h3>Actividad 2</h3></td>
+        <td><h3>5</h3></td>
+        <td><h3>Felicitaciones por tu buen desempeño</h3></td>
+    </tr>
+    <tr>
+        <td><h3>3</h3></td>
+        <td><h3>Actividad 3</h3></td>
+        <td><h3>5</h3></td>
+        <td><h3>Felicitaciones por tu buen desempeño</h3></td>
+    </tr>
+    <tr>
+        <td><h3></h3></td>
+        <td><h3>Promedio</h3></td>
+        <td><h3>5</h3></td>
+        <td><h3>Felicitaciones por tu buen desempeño</h3></td>
+    </tr>
+</tbody>
+</table>
+
+
+
+
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Notas</h2>
+               <br>
+                
+
+
+
+                <table class="table">
+                    <thead>
+                        
+                    <tr>
+                        <th><h3>Item</h3></th>
+                        <th><h3>Materia 1</h3></th>
+                        <th><h3>Nota</h3></th>
+                        <th><h3>Observaciones</h3></th>
+                    </tr>
+                                   
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><h3>1</h3></td>
+                        <td><h3>Actividad 1</h3></td>
+                        <td><h3>5</h3></td>
+                        <td><h3>Felicitaciones por tu buen desempeño</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>2</h3></td>
+                        <td><h3>Actividad 2</h3></td>
+                        <td><h3>5</h3></td>
+                        <td><h3>Felicitaciones por tu buen desempeño</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3>3</h3></td>
+                        <td><h3>Actividad 3</h3></td>
+                        <td><h3>5</h3></td>
+                        <td><h3>Felicitaciones por tu buen desempeño</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h3></h3></td>
+                        <td><h3>Promedio</h3></td>
+                        <td><h3>5</h3></td>
+                        <td><h3>Felicitaciones por tu buen desempeño</h3></td>
+                    </tr>
+                </tbody>
+                </table>
+
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Localización</h4>
+                        <p class="lead mb-0">
+                            Calle 12C Nº 6-25 
+                            <br />
+                            Bogotá D.C. Colombia.
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Redes Sociales</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">Línea teléfonica</h4>
+                        <p class="lead mb-0">
+                            (601) 297 0200 opción 3 y 1 <br>
+                            <a href="https://www.urosario.edu.co/">Universidad del Rosario</a>
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
